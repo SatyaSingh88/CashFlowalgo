@@ -6,9 +6,7 @@ import java.util.HashMap;
 import java.util.List;
 
 
-/**
- * Created by Satya prakash Singh on 25/04/2025
- */
+
 public class FindPath {
 
     static HashMap parm;
@@ -23,11 +21,10 @@ public class FindPath {
         parm.put("E", -20.0);
         parm.put("F", -5.0);
 
-        //Passing values to findPath Method.
+        
         findPath(parm);
 
-        // System.out.println(printBill.toString());
-
+        
     }
 
 
@@ -41,14 +38,14 @@ public class FindPath {
             Double result = Max_Value + Min_Value;
             result = round(result, 1);
             if ((result >= 0.0)) {
-                //printBill.add(Min_Key + " needs to pay " + Max_Key + ":" + round(Math.abs(Min_Value), 2));
+                
                 System.out.println(Min_Key + " needs to pay " + Max_Key + ":" + round(Math.abs(Min_Value), 2));
                 details.remove(Max_Key);
                 details.remove(Min_Key);
                 details.put(Max_Key, result);
                 details.put(Min_Key, 0.0);
             } else {
-                // printBill.add(Min_Key + " needs to pay " + Max_Key + ":" + round(Math.abs(Max_Value), 2));
+                
                 System.out.println(Min_Key + " needs to pay " + Max_Key + ":" + round(Math.abs(Max_Value), 2));
 
 
